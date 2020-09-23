@@ -1,0 +1,152 @@
+
+/*master styles*/
+body {margin: 0px; font-style: normal;
+}
+
+.container {
+    display:grid; 
+    grid-template-columns: 1fr;
+}
+
+
+
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding:38px
+}
+
+
+.left-side {display:flex; }
+
+.nav-wrapper >.left-side >div {margin-right:20px ; 
+    font-size:0.9em;
+    text-transform:uppercase
+}
+
+.nav-link-wrapper {
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    color:0.5s;
+
+}
+
+.nav-link-wrapper:hover {
+    border-bottom:1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color:black;
+}
+
+/*portfolio styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;}
+
+
+
+.portfolio-img-background {
+    height:50px;
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.img-text-wrapper {
+    position: absolute;
+    top: 5cm;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.logo-wrapper { 
+    width: 50%;
+    margin-bottom:40px;
+}
+
+
+/*needs to be more specific with selector */
+.img-text-wrapper .subtitle {
+    transition:1s;
+    font-weight: 600;
+    color:transparent;
+ }
+
+
+.img-text-wrapper:hover .subtitle { 
+font-weight:bold;
+color:rgb(255, 255, 255);
+
+}
+
+.img-darken { 
+    transition:1s;
+    filter: brightness(10%)
+
+}
+
+/*social icons*/
+.social-icons {
+    text-align: center;
+    }  
+
+  .social-icons li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    }
+
+  .social-icons li a {
+    border-bottom: none;
+    }
+    
+  .social-icons li img {
+    width:70px;
+    height:70px;
+    margin-right: 20px;
+  }
+
+  /*homepage styles*/ 
+
+  .two-column-wrapper  { 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+  }
+
+  .profile-image-wrapper {
+      padding-left: 30px;
+      padding-top: 10px;
+  }
+
+  .profile-content-wrapper {
+      padding: 20px;
+  }
+
+  .profile-content-wrapper h1 { 
+      color: teal;
+  }
+
+  
