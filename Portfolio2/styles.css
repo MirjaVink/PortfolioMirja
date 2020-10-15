@@ -9,7 +9,6 @@ body {margin: 0px; font-style: normal;
 }
 
 
-
 .nav-wrapper {
     display:flex;
     justify-content: space-between;
@@ -86,25 +85,7 @@ body {margin: 0px; font-style: normal;
 }
 
 
-/*needs to be more specific with selector */
-.img-text-wrapper .subtitle {
-    transition:1s;
-    font-weight: 600;
-    color:transparent;
- }
 
-
-.img-text-wrapper:hover .subtitle { 
-font-weight:bold;
-color:rgb(255, 255, 255);
-
-}
-
-.img-darken { 
-    transition:1s;
-    filter: brightness(10%)
-
-}
 
 /*social icons*/
 .social-icons {
