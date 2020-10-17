@@ -3,13 +3,13 @@
 body {margin: 0px; font-style: normal;
 }
 
-.container-navigationbar {
+.container-navbar {
     display:grid; 
     grid-template-columns: 1fr;
 }
 
 
-.nav-wrapper1 {
+.nav-wrapper {
     display:flex;
     justify-content: space-between;
     padding:38px
@@ -18,7 +18,7 @@ body {margin: 0px; font-style: normal;
 
 .left-side {display:flex; }
 
-.nav-wrapper1 >.left-side >div {margin-right:20px ; 
+.nav-wrapper >.left-side >div {margin-right:20px ; 
     font-size:0.9em;
     text-transform:uppercase
 }
@@ -143,6 +143,6 @@ width: 100%;
 /*blogpagina container*/ 
 .container {
     display:grid; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
 }
