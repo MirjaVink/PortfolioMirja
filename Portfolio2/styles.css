@@ -3,13 +3,13 @@
 body {margin: 0px; font-style: normal;
 }
 
-.container-navbar1 {
+.container-navigationbar {
     display:grid; 
     grid-template-columns: 1fr;
 }
 
 
-.nav-wrapper {
+.nav-wrapper1 {
     display:flex;
     justify-content: space-between;
     padding:38px
@@ -18,7 +18,7 @@ body {margin: 0px; font-style: normal;
 
 .left-side {display:flex; }
 
-.nav-wrapper >.left-side >div {margin-right:20px ; 
+.nav-wrapper1 >.left-side >div {margin-right:20px ; 
     font-size:0.9em;
     text-transform:uppercase
 }
