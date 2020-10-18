@@ -3,7 +3,7 @@
 body {margin: 0px; font-style: normal;
 }
 
-.container-navbar2{
+.container-navbar{
     display:grid; 
     grid-template-columns: 1fr;
 }
