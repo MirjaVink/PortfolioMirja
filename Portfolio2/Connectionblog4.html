@@ -11,7 +11,9 @@
 <style> body {font-family: 'Amiko';font-size: 16px;} </style>
 </head>
 
-<body >
+
+<body> 
+
 
     <div class="container-navbar">
         <div class="nav-wrapper">
@@ -38,53 +40,27 @@
     </div>
  </div>
 
-<div id=centerblog>
- <h1>
-    Covid-19 numbers in the 
-    <div id = "land"> </div>
-</h1>
+ <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
 
-  Datum: 
-  <div id = "datum"> </div>
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = 'zl2CJoNYFA1DVvRSjZOF3tLY7YIsp6oT';
 
-    Nieuwe Covid-19 aantallen in Nederland
-    <div id = "Newpositives"> </div>
- 
-    
-      Totale Covid-19 doden in Nederland
-      <div id = "Totaldeaths"> </div>
-      Nieuwe doden aan covid-19
-      <div id ="NewDeaths"></div>
+        var map = L.mapquest.map('map', {
+          center: [0, 0],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 14
+        });
 
-    </div>
+        L.mapquest.geocoding().geocode('Nijmegen, NL');
+      }
+    </script>
+  </head>
 
-
-<script lang="text/javascript">
-fetch('https://api.covid19api.com/summary')
-.then(function(resp){return resp.json( )}) //convert data to json
-.then(function(data){
-    console.log(data);
-
-
-
-console.log(data.Countries[121].Country);
-console.log(data.Countries[121].TotalDeaths);
-
-document.getElementById("land").innerHTML = (data.Countries[121].Country);
-document.getElementById("datum").innerHTML = (data.Countries[121].Date);
-
-document.getElementById("Newpositives").innerHTML = (data.Countries[121].NewConfirmed);
-document.getElementById("Totaldeaths").innerHTML = (data.Countries[121].TotalDeaths);
-document.getElementById("NewDeaths").innerHTML = (data.Countries[121].NewDeaths);
-})
-
-.catch(function(){ 
-    //catch any errors
-}); 
- </script>
-
-
-
+  <body style="border: 40px; margin: 20px;">
+    <div id="map" style="width: 400px; height: 400px;"></div>
+  </body>
         </body>
         </html>
         </html>
