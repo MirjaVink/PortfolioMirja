@@ -157,3 +157,9 @@ padding-right: 200px;
 
 }
 
+
+.column {
+    float: left;
+    width: 80%;
+    padding: 15px;
+  }
