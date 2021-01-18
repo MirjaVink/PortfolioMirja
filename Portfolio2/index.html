@@ -7,9 +7,26 @@
 
     <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
 
-    
+    <script type="text/javascript">
+      writeRandomQuote = function () {
+        var quotes = new Array();
+        quotes[0] = "Vierdejaars Finance and Control student.";
+        quotes[1] = "Commissaris extern bij studievereniging FS HAN.";
+        quotes[2] = "Medewerker onderwijsontwikkeling voor de HAN.";
+        quotes[3] = "Al ruim 2 jaar wonend in Nijmegen.";
+        quotes[4] = "20 jaar. ";
+        quotes[5] = "Interesse in duurzaamheid & data. ";
+        quotes[6] = "Momenteel lees ik het boek: de donuteconomie" ;
+        quotes[7] = "Ik hou van wandelen, hardlopen en in de natuur zijn. ";
+        var rand = Math.floor(Math.random()*quotes.length);
+        document.write(quotes[rand]);
+      }
+      writeRandomQuote();
+    </script>    
 
 </head>
+
+
 <style> body {font-family: 'Amiko';font-size: 16px;} </style>
 <body >
     <div class="container-navbar">
@@ -39,9 +56,7 @@
 
 
 
-
  
-  
   <!--TExt box toevoegen aan de rechterkant, zorgen dat foto aan de linkerkant blijft-->
   <div class='right-side'>
       
@@ -58,6 +73,9 @@
             <p>
             Op deze website zijn de resultaten van mijn minor Smart Industry te vinden. Er zijn verschillende blogs en vlogs te bekijken over de resultaten van mijn minor. Ook deze website is een groot resultaat, want die heb ik zelf gebouwd! Kijk lekker rond en veel leesplezier!</p>
             
+          <p> Bij het refreshen van deze pagina een nieuw feitje over mij: "<script type="text/javascript">writeRandomQuote();</script>"  </p>      
+                    
+            
       </div>
     </div>
 </div>
@@ -73,25 +91,6 @@
 
 
 </footer>
-  <script src="./js/Jquery3.4.1.min.js">
-  // Automatic Slideshow - change image every 3 seconds
-  //var myIndex = 0;
-  //carousel();
-  
-  //function carousel() {
-    //var i;
-  //  var x = document.getElementsByClassName("mySlides");
-    //for (i = 0; i < x.length; i++) {
-   //   x[i].style.display = "none";
-   // }
-   // myIndex++;
-    //if (myIndex > x.length) {myIndex = 1}
-   // x[myIndex-1].style.display = "block";
-    //setTimeout(carousel, 8000);
-  //}
-
-
-  </script>
 
     
         
